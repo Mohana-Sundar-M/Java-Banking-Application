@@ -47,11 +47,11 @@ This is a basic command-line banking application implemented in Java. It allows 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/yourusername/banking-application.git
-    ```
+   ```
 2. **Navigate to the project directory:**
-    ```
-  cd Banking Application/src/com/banking
-  ```
+   ```bash
+   cd Banking Application/src/com/banking
+   ```
 ## Usage
 
 1. **Compile the code:**
@@ -63,9 +63,9 @@ This is a basic command-line banking application implemented in Java. It allows 
 
 2. **Run the application:**
   Once the code is compiled successfully, you can run the application by executing the following command:
-  ```bash
-  java Main
-  ```
+     ```bash
+     java Main
+     ```
 This command starts the banking application and displays the welcome message along with the available options.
 
 Interact with the application:
