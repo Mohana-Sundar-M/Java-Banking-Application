@@ -72,7 +72,8 @@ public class BankingSystem {
 			default://other option
 				System.out.println("Invalid option");
 			
-			}
+				}
+			
 			}catch(InputMismatchException e) {
 				System.out.println("Error Occured Try Again With Correct Inputs");
 				System.out.println();
