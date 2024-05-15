@@ -1,5 +1,6 @@
 package com.banking;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class BankingSystem {
@@ -34,6 +35,7 @@ public class BankingSystem {
 			
 			displayObj.display();//displaying the contents
 			
+			try {
 			//Getting the user choice
 			System.out.println("Enter The Choice (1-4)");
 			option = scan.nextInt();
@@ -49,8 +51,11 @@ public class BankingSystem {
 				
 			case 2://deposit
 				System.out.println("Enter the Amount To Deposit");
-				depositAmount = scan.nextDouble();
-				account.deposit(depositAmount);
+				
+					depositAmount = scan.nextDouble();
+					account.deposit(depositAmount);
+				
+				
 				break;
 				
 			case 3://withdraw
@@ -67,6 +72,11 @@ public class BankingSystem {
 			default://other option
 				System.out.println("Invalid option");
 			
+			}
+			}catch(InputMismatchException e) {
+				System.out.println("Error Occured Try Again With Correct Inputs");
+				System.out.println();
+				scan.nextLine();//Clear the input buffer
 			}
 		}
 				
