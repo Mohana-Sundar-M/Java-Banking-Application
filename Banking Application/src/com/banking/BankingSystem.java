@@ -74,7 +74,8 @@ public class BankingSystem {
 			
 				}
 			
-			}catch(InputMismatchException e) {
+			}
+			catch(InputMismatchException e) {
 				System.out.println("Error Occured Try Again With Correct Inputs");
 				System.out.println();
 				scan.nextLine();//Clear the input buffer
